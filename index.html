@@ -12,8 +12,19 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
     <link rel="stylesheet" href="./src/scss/main.scss" />
+    <link
+      rel="stylesheet"
+      href="./src/scss/productDetail/productsDetail.scss"
+    />
+    <link rel="stylesheet" href="./src/scss/cart/cart.scss" />
     <!-- js -->
     <script type="module" src="./src/js/main.js" defer></script>
+
+    <!-- <script
+      type="module"
+      src="./src/js/page/productDetail/productDetail.js"
+      defer
+    ></script> -->
   </head>
 
   <body>
@@ -215,6 +226,39 @@
         </li>
         <div>test</div>
       </ul>
+    </div>
+
+    <!-- 상품 정보 -->
+    <!-- <div>
+      <ul class="productDetailLists">
+        <li class="productDetailList" data-product-id="${id}">
+          <a href="/${id}" data-navigo>
+            <div>${title}</div>
+            <div>${price}</div>
+            <div>${thumbnail}</div>
+            <div>${description}</div>
+            <div>${isSoldOut}</div>
+          </a>
+        </li>
+      </ul>
+    </div> -->
+
+    <!-- 장바구니 modal -->
+    <div class="modal__addCart">
+      <div class="modal__addCart-container">
+        <div class="modal__addCart--info">
+          <img src="./public/cart.svg" alt="장바구니 추가 완료" />
+          <h4>장바구니에 추가되었습니다.</h4>
+        </div>
+        <div class="modal__addCart--btns">
+          <a href="/" data-navigo class="modal__addCart--btn keepShopping"
+            ><button>계속 쇼핑하기</button></a
+          >
+          <a href="/cart" data-navigo class="modal__addCart--btn goToCart"
+            ><button>장바구니 바로가기</button></a
+          >
+        </div>
+      </div>
     </div>
   </body>
 </html>
